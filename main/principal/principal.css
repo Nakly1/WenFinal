@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230626/pngtree-illustration-of-a-money-coin-with-bank-icon-in-3d-rendering-image_3682631.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-menu, .right-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.menu-item, .large-menu-item {
+    width: 100%;
+}
+
+.menu-item button, .large-menu-item button {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover, .large-menu-item button:hover {
+    background-color: #218838;
+}
+
+.large-menu-item button {
+    padding: 40px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tipos de Ingresos y Egresos</title>
+    <link rel="stylesheet" href="./rq2.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Banco Nuevo Horizonte</h1>
+    </div>
+    <div class="container">
+        <h1>Gestión de Tipos de Ingresos y Egresos</h1>
+        <form id="transactionTypeForm">
+            <input type="hidden" id="transactionTypeId" name="transactionTypeId">
+            <div>
+                <label for="transactionCode">Código</label>
+                <input type="text" id="transactionCode" name="transactionCode" required>
+            </div>
+            <div>
+                <label for="transactionName">Nombre del tipo</label>
+                <input type="text" id="transactionName" name="transactionName" required>
+            </div>
+            <div style="flex: 1 1 100%;">
+                <label for="transactionDescription">Descripción</label>
+                <textarea id="transactionDescription" name="transactionDescription" rows="3"></textarea>
+            </div>
+            <div>
+                <label for="transactionType">Tipo</label>
+                <select id="transactionType" name="transactionType" required>
+                    <option value="ingreso">Ingreso</option>
+                    <option value="egreso">Egreso</option>
+                </select>
+            </div>
+            <div style="flex: 1 1 100%;">
+                <label for="transactionCategory">Categoría (alimentación, transporte, entretenimiento)</label>
+                <input type="text" id="transactionCategory" name="transactionCategory">
+            </div>
+            <div style="flex: 1 1 100%; text-align: center;">
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+
+        <div class="transaction-type-list" id="transactionTypeList">
+        </div>
+    </div>
+    <script src="./rq2.js"></script>
+</body>
+</html>

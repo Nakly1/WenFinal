@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alertas</title>
+    <link rel="stylesheet" href="./rq4.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Banco Nuevo Horizonte</h1>
+    </div>
+    <div class="container">
+        <h1>Gestión de Alertas</h1>
+        <form id="alert-form">
+            <div class="form-group">
+                <label for="alert-type">Tipo de alerta:</label>
+                <select id="alert-type" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Vencimiento de factura">Vencimiento de factura</option>
+                    <option value="Saldo mínimo alcanzado">Saldo mínimo alcanzado</option>
+                    <option value="Depósito recibido">Depósito recibido</option>
+                    <option value="Gasto inusual">Gasto inusual</option>
+                    <option value="Pago recurrente">Pago recurrente</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <input type="text" id="custom-alert-type" placeholder="Especificar tipo de alerta" style="display: none;">
+            </div>
+            <div class="form-group">
+                <label for="alert-description">Descripción de la alerta:</label>
+                <textarea id="alert-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="alert-date-time">Fecha y hora de la alerta:</label>
+                <input type="datetime-local" id="alert-date-time" required>
+            </div>
+            <div class="form-group">
+                <label for="alert-repetition">Opciones de repetición (opcional):</label>
+                <select id="alert-repetition">
+                    <option value="Una vez">Una vez</option>
+                    <option value="Diariamente">Diariamente</option>
+                    <option value="Semanalmente">Semanalmente</option>
+                    <option value="Mensualmente">Mensualmente</option>
+                </select>
+            </div>
+            <button type="submit">Agregar Alerta</button>
+        </form>
+        <table id="alert-table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descripción</th>
+                    <th>Fecha y Hora</th>
+                    <th>Repetición</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+          
+            </tbody>
+        </table>
+    </div>
+    <script src="./rq4.js"></script>
+</body>
+</html>

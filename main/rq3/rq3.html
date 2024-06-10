@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Transacciones</title>
+    <link rel="stylesheet" href="./rq3.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Banco Nuevo Horizonte</h1>
+    </div>
+    <div class="container">
+        <h1>Gestión de Transacciones</h1>
+        <form id="transaction-form">
+            <div class="form-group">
+                <label for="transaction-type">Tipo de transacción:</label>
+                <select id="transaction-type" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Ingreso">Ingreso</option>
+                    <option value="Egreso">Egreso</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="category">Tipo de ingreso/egreso:</label>
+                <input type="text" id="category" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Valor de la transacción:</label>
+                <input type="number" id="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="bank-account">Cuenta bancaria relacionada:</label>
+                <input type="text" id="bank-account" required>
+            </div>
+            <div class="form-group">
+                <label for="transaction-date">Fecha de la transacción:</label>
+                <input type="date" id="transaction-date" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción (opcional):</label>
+                <textarea id="description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="attachment">Adjunto (opcional):</label>
+                <input type="file" id="attachment" accept="image/*">
+            </div>
+            <button type="submit">Agregar Transacción</button>
+        </form>
+        <table id="transaction-table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Categoria</th>
+                    <th>Valor</th>
+                    <th>Cuenta</th>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Adjunto</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="./rq3.js"></script>
+</body>
+</html>

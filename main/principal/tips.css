@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220216/pngtree-blue-tech-banner-background-image_930958.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main {
+    text-align: left;
+    margin: 40px 20px;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h1 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main a button {
+    display: block;
+    background-color: #0f8992;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.tips {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.tips .tip {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.9);
+    border-radius: 5px;
+}
+
+.tips .tip img {
+    width: 100%;
+    height: 200px;
+    background-color: #c0c0c0;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tips .tip p {
+    margin: 0;
+    text-align: center;
+}
